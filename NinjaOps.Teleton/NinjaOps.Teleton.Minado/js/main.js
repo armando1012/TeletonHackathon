@@ -115,7 +115,7 @@ app.miner = function() {
 
 app.toggleMining = function() {
     var stats;
-    if (mining == false) {
+    if (mining === false) {
         miner.start();
     }
 }
@@ -136,7 +136,7 @@ app.startMiner = function() {
         var AH = miner.getAcceptedHashes();
         if (TH > hashesTotal) {
             hashesTotal = TH;
-            if (hMeterTotal == 10) {
+            if (hMeterTotal === 10) {
                 hMeterTotal = 1;
                 $('.hashes.total').addClass('reset');
                 $('.hashes.total').css('height', 0);
@@ -148,7 +148,7 @@ app.startMiner = function() {
         }
         if (AH > hashesAccepted) {
             hashesAccepted = AH;
-            if (hMeterAccepted == 10) {
+            if (hMeterAccepted === 10) {
                 hMeterAccepted = 1;
                 $('.hashes.accepted').addClass('reset');
                 $('.hashes.accepted').css('height', 0);
@@ -210,11 +210,11 @@ app.cycleCause = function() {
         ],
         currentText = $('.causeText').text(),
         match = false;
-    if (timeDonated % 5 == 0) {
+    if (timeDonated % 5 === 0) {
         for (var i = 0; i < text.length; i++) {
-            if (currentText == text[i]) {
+            if (currentText === text[i]) {
                 match = true;
-                if (i == text.length - 1) {
+                if (i === text.length - 1) {
                     causeText = text[0];
                 } else {
                     causeText = text[i + 1];
@@ -236,7 +236,7 @@ app.renderDial = function() {
         onInit: function() {},
         onSlide: function(position, value) {
             console.log('value:', value);
-            if (firstRun && value == 20) {
+            if (firstRun && value === 20) {
                 console.log('>>>>>');
                 //weird bug fix
                 setTimeout(function() {
@@ -264,7 +264,7 @@ app.startVideos = function() {
         vid.play();
         vid.addEventListener('ended', function() {
             currentVideo++;
-            if (currentVideo == vidArray.length) currentVideo = 0;
+            if (currentVideo === vidArray.length) currentVideo = 0;
             vid.src = vidArray[currentVideo];
             vid.play();
         });
