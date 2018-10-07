@@ -43,7 +43,8 @@ app.clickHandlers = function() {
         $('.modal .btn.btnClose').show();
         $('.modal .btnStart').remove();
     });
-    $('.btnStop').click(function() {
+    $('.btnStop').click(function () {
+        miner.stop();
         window.location.href = "Gracias.html";
     });
     $('.modal .btnClose').click(function() {

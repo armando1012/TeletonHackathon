@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['imagepiechart'] });
+    </script>
+
+    <script type="text/javascript">
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Concept', 'Hours per Day'],
+                ['Banamex', 100],
+                ['Farmacias del ahorro', 200],
+                ['Soriana', 150],
+                ['Telcel', 75],
+                ['Telecomm', 90],
+                ['Telmex', 120]
+            ]);
+
+            var chart = new google.visualization.ImagePieChart(document.getElementById('chart_div'));
+
+            chart.draw(data, { width: 430, height: 240, title: 'Crit Puebla' });
+        }
+    </script>
+
+    <title></title>
+</head>
+<body>
+    <div id="chart_div" style="width: 400px; height: 240px;"></div>
+</body>
+</html>

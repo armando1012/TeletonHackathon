@@ -97,10 +97,10 @@ h4 {
 }
 
 .row {
-    width: 100%;
-    float: left;
+    width: 100%;    
+    float:left;
     position: relative;
-    padding: 35px 0 40px;
+    padding: 35px 0px 40px;
 }
 
 .btn {
@@ -203,13 +203,11 @@ h4 {
     object-fit: cover;
 }
 
-.main {
-    float: left;
+.main {    
     z-index: 1;
-    width: 90%;
-    padding: 0 5%;
-    text-align: center;
-    position: relative;
+    width: 100%;
+    padding: 10px;
+    text-align: center;    
     flex: 1 1 auto;
     align-items: center;
     display: flex;
@@ -546,7 +544,7 @@ footer .nav-container .links .link-item a {
 
 .intro .copy {
     padding: 0 80px;
-    max-width: 580px;
+    max-width: 80%;
     font-size: 20px;
     line-height: 1.4;
     position: relative;
@@ -1192,7 +1190,7 @@ body[data-debug="true"]:hover::after {
 }
 
 .dra {
-    width: 50%;
+    width: 100%;
     height: 500px;
 }
 
@@ -1206,9 +1204,19 @@ body[data-debug="true"]:hover::after {
     }
 }
 
-.col-md-6 {
+@media (max-width: 1300px) {
+    .col-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        float: left !important;
+        width: 100% !important;
+    }
+}
+
+.col-6 {
     flex: 0 0 50%;
     max-width: 50%;
-    float: left;
-    width: 50%;
+    float: left;   
+    width:50%;
 }
+
