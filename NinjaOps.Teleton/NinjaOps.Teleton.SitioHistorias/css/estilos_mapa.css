@@ -1,0 +1,16 @@
+.map {
+    position: relative;
+    top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#content_mapa {
+    padding-top: 200px;
+}
+
+@media (max-width: 1330px) {
+    #content_mapa {
+        padding-top: 20px;
+    }
+}

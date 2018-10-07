@@ -11,6 +11,19 @@
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
+
+            const url = 'http://ninjaops.io/api/test?id=1';
+
+            fetch(url)
+                .then((resp) => resp.json())
+                .then(function (data) {
+                    let info = data.results;
+
+                    return info.map(function (varo) {
+
+                    })
+                });
+
             var data = google.visualization.arrayToDataTable([
                 ['Concept', 'Hours per Day'],
                 ['Banamex', 100],

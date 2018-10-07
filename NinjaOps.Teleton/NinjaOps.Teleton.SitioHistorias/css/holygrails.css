@@ -1,0 +1,90 @@
+.body {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
+
+.hg-header {
+    grid-area: header;
+    background-color: #ffff;
+}
+
+.hg-footer {
+    grid-area: footer;
+    background-color: purple;
+}
+
+.hg-main {
+    grid-area: main;
+    overflow: hidden;
+}
+
+.hg-left {
+    grid-area: navigation;
+    background-color: #ffff;
+}
+
+.hg-right {
+    grid-area: ads;
+    background-color: white;
+}
+
+.hg {
+    display: grid;
+    grid-template-areas: "header header header" "navigation main ads" "footer footer footer";
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px 1fr 200px;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 1540px) {
+    .hg {
+        grid-template-areas: "header" "navigation" "main" "ads" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 1075px 2fr 50px 200px;
+    }
+}
+
+.logo {
+    height: 80px;
+}
+
+.hahaha {
+    float: left;
+}
+
+.monotono {
+    height: 80px;
+    width: 33%;
+}
+
+.twenty {
+    width: 50%;
+}
+
+.hope {
+    font-size: 50px;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
+
+.fulls {
+    background-color: #FFFFFF;
+}
+
+.cards {
+    width: 99.2%;
+    height: auto;
+}
+
+@media (max-width: 1840px) {
+    .hope {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .hope {
+        font-size: 20px;
+    }
+}

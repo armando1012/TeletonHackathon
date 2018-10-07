@@ -27,6 +27,28 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NinjaOps.Teleton.Minado", "
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NinjaOps.Teleton.SitioHistorias", "NinjaOps.Teleton.SitioHistorias\", "{5F658721-E032-4293-8C75-6BAA9230DA36}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59470"
+		Debug.AspNetCompiler.PhysicalPath = "NinjaOps.Teleton.SitioHistorias\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59470\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59470"
+		Release.AspNetCompiler.PhysicalPath = "NinjaOps.Teleton.SitioHistorias\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59470\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59470"
+		SlnRelativePath = "NinjaOps.Teleton.SitioHistorias\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +97,22 @@ Global
 		{FF0E237B-29C7-4154-AAE0-D96CE469E315}.Release|x64.Build.0 = Debug|Any CPU
 		{FF0E237B-29C7-4154-AAE0-D96CE469E315}.Release|x86.ActiveCfg = Debug|Any CPU
 		{FF0E237B-29C7-4154-AAE0-D96CE469E315}.Release|x86.Build.0 = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Debug|ARM.Build.0 = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Debug|x64.Build.0 = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Debug|x86.Build.0 = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Release|ARM.ActiveCfg = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Release|ARM.Build.0 = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Release|x64.ActiveCfg = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Release|x64.Build.0 = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Release|x86.ActiveCfg = Debug|Any CPU
+		{5F658721-E032-4293-8C75-6BAA9230DA36}.Release|x86.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

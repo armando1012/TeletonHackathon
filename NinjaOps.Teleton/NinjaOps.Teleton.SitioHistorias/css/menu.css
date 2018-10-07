@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #ffffff;
+}
+
+.fit {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.one {
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+}
+
+.one .two {
+    position: relative;
+    width: 250px;
+    height: 500px;
+    background: #ccc;
+    transition: .5s;
+}
+
+.one .two:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1)
+}
+
+.one .two .thumb {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.one .two:nth-child(odd) .thumb {
+    bottom: 0;
+    left: 0;
+}
+
+.one .two .thumb .fit {
+    width: 100%;
+}
+
+.one .two .details {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #262626;
+}
+
+.one .two:nth-child(even) .details {
+    bottom: 0;
+    left: 0;
+}
+
+.one .two:nth-child(1) .details {
+    background: #00bea4;
+}
+
+.one .two:nth-child(2) .details {
+    background: #ff9656;
+}
+
+.one .two:nth-child(3) .details {
+    background: #5789dd;
+}
+
+.one .two:nth-child(4) .details {
+    background: #ff6473;
+}
+
+.one .two .details .three {
+    position: absolute;
+    top: calc(50% + 16px);
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.one .two:hover .details .three {
+    top: calc(50%)
+}
+
+.one .two .details .three .nah {
+    font-size: 80px;
+    color: #fff;
+}
+
+.one .two .details .three h3 {
+    margin: 0;
+    padding: 0;
+    padding: 10px 0;
+    color: #fff;
+}
+
+@media (max-width: 4000px) {
+    .one {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        display: initial;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+    }
+    .one .two {
+        width: 100%;
+        height: 250px;
+        float: none;
+    }
+    .one .two .thumb {
+        display: none;
+    }
+}
+
+.nah {
+    height: 100px;
+    width: 100px;
+}

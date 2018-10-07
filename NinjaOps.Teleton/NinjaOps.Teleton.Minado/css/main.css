@@ -1220,3 +1220,17 @@ body[data-debug="true"]:hover::after {
     width:50%;
 }
 
+.grafica{
+    width:100%;
+    text-align:left;
+}
+
+.grafica .titulo{
+    text-align:left;
+}
+
+.grafica .subtitulo{
+    text-align:left;
+    font-size:24px;
+    color:white;
+}

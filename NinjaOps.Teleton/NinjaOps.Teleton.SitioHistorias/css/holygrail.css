@@ -1,0 +1,113 @@
+.body {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
+
+.hg-header {
+    grid-area: header;
+    background-color: #ffff;
+}
+
+.hg-footer {
+    grid-area: footer;
+    background-color: purple;
+}
+
+.hg-main {
+    grid-area: main;
+    overflow: hidden;
+}
+
+.hg-left {
+    grid-area: navigation;
+    background-color: #ffff;
+}
+
+.hg-right {
+    grid-area: ads;
+    background-color: white;
+}
+
+.hg {
+    display: grid;
+    grid-template-areas: "header header header" "navigation main ads" "footer footer footer";
+    grid-template-columns: 300px 1fr 45%;
+    grid-template-rows: 100px 1fr 60px;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 1805px) {
+    .hg {
+        grid-template-areas: "header" "navigation" "main" "ads" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 1075px 2fr 800px 150px;
+    }
+}
+
+.logo {
+    height: 80px;
+}
+
+.hahaha {
+    float: left;
+}
+
+.monotono {
+    height: 80px;
+    width: 33%;
+}
+
+.twenty {
+    width: 50%;
+}
+
+.escudo {
+    margin: 0, auto;
+    background-color: #D71C5D;
+    height: 97.5%;
+    padding:15px;
+}
+
+.hope {
+    font-size: 50px;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
+
+.fulls {
+    background-color: #D71C5D;
+}
+
+@media (max-width: 1840px) {
+    .hope {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .hope {
+        font-size: 20px;
+    }
+}
+
+.grafica .titulo{
+    font-size:34px;
+    text-align:left;
+    color:white;
+    margin-top:20%;
+}
+
+.grafica .subtitulo {
+    font-size: 24px;
+    text-align: left;
+    color: white;
+    margin-top:25px;
+}
+
+.grafica .monto {
+    font-size: 34px;
+    text-align: right;
+    color: white;
+    margin-top: 25px;
+}
