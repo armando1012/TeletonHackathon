@@ -44,7 +44,7 @@ app.clickHandlers = function() {
         $('.modal .btnStart').remove();
     });
     $('.btnStop').click(function() {
-        window.location.href = "Index.html";
+        window.location.href = "Gracias.html";
     });
     $('.modal .btnClose').click(function() {
         $('.modal').fadeOut(tSpeed);

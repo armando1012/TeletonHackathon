@@ -1063,7 +1063,7 @@ body.active-modal {
 }
 
 .donating .container {
-    max-width: 710px;
+    max-width: 100%;
     float: left;
 }
 
@@ -1204,4 +1204,11 @@ body[data-debug="true"]:hover::after {
         width: 100%;
         text-align: center;
     }
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    float: left;
+    width: 50%;
 }

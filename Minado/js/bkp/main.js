@@ -2088,3 +2088,4 @@ app.SubscribeForm = function() {
             }
         });
     }
+}
